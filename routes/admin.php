@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ebrahimcontroller;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\Admin\ageController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Controller;
 
@@ -20,7 +18,7 @@ use App\Http\Controllers\Controller;
 */
 
 
-Route::middleware('auth')->prefix("admin")->group(function(){
+Route::middleware(['auth' ])->prefix("admin")->group(function(){
 
     Route::get("/" , [DashboardController::class , "index"])->name('dashboard');
 

@@ -58,7 +58,8 @@
         </div>
         <div class="main-panel ps-container ps-theme-default" data-ps-id="fc652f0f-fd39-0eaa-2d4c-f8b1e4787a58">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top collapse show" id="navigation-example" >
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top collapse show"
+                id="navigation-example">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
                         <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
@@ -70,29 +71,34 @@
                         <span class="navbar-toggler-icon icon-bar"></span>
                         <span class="navbar-toggler-icon icon-bar"></span>
                     </button>
-                    <li class="nav-item dropdown show ">
-                        <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">person</i>
-                            <span class="notification">4</span>
-                            <p class="d-lg-none d-md-block">
-                                Some Actions
-                            </p>
-                            <div class="ripple-container"></div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="javscript:void(0)">HELLO {{ Auth::user()->name}}</a>
-                            <a class="dropdown-item" href="{{ route('home') }}">visit site</a>
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">person</i>
+                                    <span class="notification">5</span>
+                                    <p class="d-lg-none d-md-block">
+                                        Some Actions
+                                    </p>
+                                    <div class="ripple-container"></div>
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="javscript:void(0)">Hello {{ Auth::user()->name }}</a>
+                                    <a class="dropdown-item" href="{{route('home')}}">Visit site</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                        </div>
-                    </li>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                            <!-- your navbar here -->
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <!-- End Navbar -->

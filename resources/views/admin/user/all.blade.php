@@ -31,7 +31,7 @@
                                 <td> <?php echo $increment++ ?> </td>
                                 <td> {{$user->name}} </td>
                                 <td> {{$user->email}}</td>
-                                <td> {{$user->created_at}}</td>
+                                <td>{{$user->created_at}}</td>
                                 <td class="">
                                     <a href="{{route('user.show' , $user->id )}}" class="btn btn-info">show</a>
                                     <a href="{{route('user.edit' , $user->id )}}" class="btn btn-warning">edit</a>

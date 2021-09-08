@@ -56,6 +56,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <select name="role" class="form-select  custom-select">
+                                    <option selected hidden disabled>SELECT ROLE</option>
                                     @foreach ($roles as $role)
                                     <option value="{{$role->id}}">{{$role->name}}</option>
                                     @endforeach

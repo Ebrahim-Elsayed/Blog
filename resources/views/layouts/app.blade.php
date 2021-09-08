@@ -69,6 +69,16 @@
                                     <a href="{{route('dashboard')}}" class="dropdown-item" >Dashboard</a>
                                 @endif
 
+                                <!-- Returns current url with English locale. -->
+                                @if(LaravelLocalization::getCurrentLocale() == 'ar')
+
+                                <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('en') }}">English</a>
+
+                                @else
+
+                                <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">العربية</a>
+
+                                @endif
 
 
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
