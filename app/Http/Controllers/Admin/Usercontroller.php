@@ -2,22 +2,24 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Admin\trait\PDFGenerator;
 use App\Models\Role;
 use App\Models\User;
-
 use Illuminate\Http\Request;
+
 use UxWeb\SweetAlert\SweetAlert;
 use App\Http\Controllers\Controller;
 use function GuzzleHttp\Promise\all;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\Admin\trait\PDFGenerator;
+use App\Http\Controllers\Admin\trait\Exports\UserExport;
 
 
 class Usercontroller extends Controller
 {
     use PDFGenerator;
+    use UserExport;
     /**
      * Display a listing of the resource.
      *

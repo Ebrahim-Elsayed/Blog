@@ -71,7 +71,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: #212529;
-    text-align: left;
+    text-align: right;
     background-color: #f8fafc;
 }
 
@@ -227,7 +227,7 @@ caption {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     color: #6c757d;
-    text-align: left;
+    text-align: right;
     caption-side: bottom;
 }
 
@@ -3417,7 +3417,7 @@ input[type=button].btn-block {
     margin: 0.125rem 0 0;
     font-size: 0.9rem;
     color: #212529;
-    text-align: left;
+    text-align: right;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
@@ -8858,7 +8858,7 @@ button.bg-dark:focus {
 
 .ml-auto,
 .mx-auto {
-    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 @media (min-width: 576px) {

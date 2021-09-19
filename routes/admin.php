@@ -18,11 +18,13 @@ use App\Http\Controllers\Controller;
 */
 
 
-Route::middleware(['auth' ])->prefix("admin")->group(function(){
+Route::middleware(['auth' , 'isAdmin'])->prefix("admin")->group(function(){
 
     Route::get("/" , [DashboardController::class , "index"])->name('dashboard');
 
     Route::get('/user/pdf' , [UserController::class , 'userpdf'])->name('userpdf');
+
+    Route::get('/user/export' , [UserController::class , 'export'])->name('user.export');
 
     Route::resource('/user' , UserController::class);
 

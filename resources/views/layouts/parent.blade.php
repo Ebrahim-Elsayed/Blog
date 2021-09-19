@@ -132,9 +132,9 @@
             </footer>
         </div>
     </div>
-    <!--   Core JS Files   -->
-    <script src="{{URL::asset('adminpanel/js/core/jquery.min.js')}}"></script>
+    <script src="adminpanel/js/core/jquery.min.js"></script>
     <script src="{{URL::asset('adminpanel/js/core/popper.min.js')}}"></script>
+
     <script src="{{URL::asset('adminpanel/js/core/bootstrap-material-design.min.js')}}"></script>
     <script src="https://unpkg.com/default-passive-events"></script>
     <script src="{{URL::asset('adminpanel/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>

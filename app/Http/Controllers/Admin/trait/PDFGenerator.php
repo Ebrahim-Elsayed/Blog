@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin\trait;
 
 use App\Models\User;
-use PDF;
 
 trait PDFGenerator {
     public function userpdf(){

@@ -17,9 +17,11 @@ class Roleseeder extends Seeder
     {
         //
         DB::table('roles')->insert([
-            array('name' => 'admin'),
-            array('name' => 'moderator'),
-            array('name' => 'user')
+            ['name' => 'admin'],
+            array('name' => 'moderator '),
+            array('name' => 'user'),
+            ['name' => 'maneger'],
+            ['name' => 'HR'],
         ]);
     }
 }
